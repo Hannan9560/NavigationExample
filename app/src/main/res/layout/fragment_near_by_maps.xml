@@ -1,0 +1,47 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hannantalukder.navigationexample.PlacesActivity.Fragment.NearByMapsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/menu_layout" >
+        <!--<LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1cccc"
+            android:orientation="horizontal"
+            android:layout_above="@+id/map">
+            <ImageButton
+                android:id="@+id/design_change_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMapType"
+                android:src="@mipmap/ic_change_history_black_24dp"/>
+        </LinearLayout>-->
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_layout">
+            <ImageButton
+                android:id="@+id/design_change_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/ic_change_history_black_24dp"/>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

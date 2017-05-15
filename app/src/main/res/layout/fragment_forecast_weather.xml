@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forecast"
+    android:orientation="vertical"
+    tools:context="com.example.hannantalukder.navigationexample.WeatherActivity.Fragment.ForecastWeather">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/weatherForecastLv">
+    </ListView>
+
+</LinearLayout>
+
